@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - 8080:80
+
+  backend:
+    image: node:20
+    user: node
+    working_dir: /home/node/app
+    volumes:
+      - ./scripts:/home/node/app/scripts
+    ports:
+      - 8001:8001
+    command: nohup /home/node/app/scripts/server.js > /

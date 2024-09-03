@@ -1,0 +1,42 @@
+{
+  "type": "Commonsjs",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "esmify": "^2.1.1",
+    "express": "^4.17.3",
+    "gulp-concat": "^2.6.1",
+    "i": "^0.3.7",
+    "icecast-metadata-player": "^1.11.6",
+    "icecast-metadata-stats": "^0.1.2",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.22",
+    "npm": "^8.5.5",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "watchify": "^4.0.0"
+  },
+  "name": "scripts",
+  "version": "1.0.0",
+  "main": "player.js",
+  "scripts": {
+    "build": "browserify player.js visualizer.js chat.js themeswitcher.js drag.js main.js -o -p esmify > bundle.js",
+    "watch": "watchify player.js -o -p esmify > bundle.js",
+    "devStart": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.49.9"
+  }
+}
