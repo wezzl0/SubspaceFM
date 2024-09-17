@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-<script src="scripts/decodeEntities.js"> </script>
 <script defer src="https://subspacefm.xyz/socket.io/socket.io.js"></script>
-<script src="scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
 <script type="module" src="scripts/bundle.js"> </script>
 
-<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style.css">
 
 <body>
-    <script>0</script>
     <div class="theme_switcher">
         <img src="images/1_arrow6_left.png" class="left" id="left" />
         <img src="images/1_arrow6_right.png" class="right" id="right" />
@@ -17,17 +14,24 @@
         <div class="topbar">
             <img src="images/card.png" class="drag" id="drag" />
             <img src="images/1_small.png" class="size small" id="size" />
-            <p class="nowplaying" style="grid-row: 1;"> Now Playing: <span class="metadata" id="metadata"></span> </p>
+            <p class="nowplaying" style="grid-row: 1;"> 
+				Now Playing: <span class="metadata" id="metadata"></span> 
+			</p>
         </div>
+		
         <div class="controlbox">
-            <button style="grid-row: 1;" class="streambtn" id="play"> <img id="play_img" class="play_img"
-                    src="images/1_play.png" /> </button>
-            <button style="grid-row: 1;" class="streambtn" id="stop"> <img id="pause_img" class="pause_img"
-                    src="images/1_pause.png" /> </button>
-            <button style="grid-row: 1;" class="streambtn" id="link"> <img id="link_img" class="link_img"
-                    src="images/3_disk_pile.png" /> </button>
-            <button style="grid-row: 1;" class="streambtn" id="youtube"> <img id="youtube_img" class="youtube_img"
-                    src="images/3_projector.png" /> </button>
+            <button style="grid-row: 1;" class="streambtn" id="play">
+				<img id="play_img" class="play_img" src="images/1_play.png" /> 
+			</button>
+            <button style="grid-row: 1;" class="streambtn" id="stop">
+				<img id="pause_img" class="pause_img" src="images/1_pause.png" />
+			</button>
+            <button style="grid-row: 1;" class="streambtn" id="link">
+				<img id="link_img" class="link_img" src="images/3_disk_pile.png" />
+			</button>
+            <button style="grid-row: 1;" class="streambtn" id="youtube">
+				<img id="youtube_img" class="youtube_img" src="images/3_projector.png" />
+			</button>
             <div class="borders"><input type="range" min="1" max="100" value="50" class="slider" id="volume"></div>
             <img id="speaker_img" class="speaker_img" src="images/3_speaker.png" />
 
