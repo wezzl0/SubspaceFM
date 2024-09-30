@@ -20,6 +20,9 @@ importers:
       svelte:
         specifier: ^4.2.7
         version: 4.2.19
+      svelte-preprocess-import-assets:
+        specifier: ^1.1.0
+        version: 1.1.0(svelte@4.2.19)
       vite:
         specifier: ^5.0.3
         version: 5.4.6
@@ -437,6 +440,16 @@ packages:
     peerDependencies:
       svelte: ^3.19.0 || ^4.0.0
 
+  svelte-parse-markup@0.1.5:
+    resolution: {integrity: sha512-T6mqZrySltPCDwfKXWQ6zehipVLk4GWfH1zCMGgRtLlOIFPuw58ZxVYxVvotMJgJaurKi1i14viB2GIRKXeJTQ==}
+    peerDependencies:
+      svelte: ^3.0.0 || ^4.0.0 || ^5.0.0-next.1
+
+  svelte-preprocess-import-assets@1.1.0:
+    resolution: {integrity: sha512-pWjoceFcGAG6vUg50JZXfhr5V4amxI2aYbcsn6CJrytcA528NNgaHnvMR1EwJYBIpZEf302I8Pyw0YeEta1zbg==}
+    peerDependencies:
+      svelte: ^3.37.0 || ^4.0.0 || ^5.0.0-next.1
+
   svelte@4.2.19:
     resolution: {integrity: sha512-IY1rnGr6izd10B0A8LqsBfmlT5OILVuZ7XsI0vdGPEvuonFV7NYEUK4dAkm9Zg2q0Um92kYjTpS1CAP3Nh/KWw==}
     engines: {node: '>=16'}
@@ -825,6 +838,17 @@ snapshots:
   svelte-hmr@0.16.0(svelte@4.2.19):
     dependencies:
       svelte: 4.2.19
+
+  svelte-parse-markup@0.1.5(svelte@4.2.19):
+    dependencies:
+      svelte: 4.2.19
+
+  svelte-preprocess-import-assets@1.1.0(svelte@4.2.19):
+    dependencies:
+      estree-walker: 3.0.3
+      magic-string: 0.30.11
+      svelte: 4.2.19
+      svelte-parse-markup: 0.1.5(svelte@4.2.19)
 
   svelte@4.2.19:
     dependencies:
